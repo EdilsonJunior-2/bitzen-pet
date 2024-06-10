@@ -1,0 +1,94 @@
+@import "../../../../assets/styles/variables";
+
+button {
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 300ms;
+
+    &.primary {
+        background-color: $primary;
+        border: 1px solid $primary;
+
+        &:hover {
+            background-color: $primaryDark;
+            border-color: $primaryDark;
+        }
+
+        &.outlined {
+            background-color: white;
+            color: $primary;
+
+            &:hover {
+                color: $primaryDark;
+            }
+        }
+
+        &.borderless {
+            border: none;
+            background: transparent;
+            color: $primary;
+            padding: 0;
+
+            &:hover {
+                color: $primaryDark;
+            }
+        }
+    }
+
+    &.error {
+        background-color: $error;
+        border: 1px solid $error;
+
+        &.outlined {
+            background-color: white;
+            color: $error;
+        }
+
+        &.borderless {
+            border: none;
+            background: transparent;
+            color: $error;
+            padding: 0;
+        }
+    }
+
+
+    &.neutral {
+        background-color: $neutral200;
+        border: 1px solid $neutral200;
+
+        &.outlined {
+            background-color: white;
+            color: $neutral200;
+
+            &:hover {
+                background-color: $neutral100;
+            }
+        }
+
+        &.borderless {
+            border: none;
+            color: $neutral200;
+            padding: 0;
+        }
+    }
+
+    &.full {
+        width: 100%;
+    }
+
+    &.thin {
+        padding: .25rem;
+    }
+
+    &:disabled,
+    &:disabled:hover {
+        background-color: $neutral400;
+        border-color: $neutral400;
+        cursor: initial;
+    }
+}

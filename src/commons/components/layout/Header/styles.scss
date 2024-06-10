@@ -1,0 +1,46 @@
+@import "../../../../assets/styles/variables";
+
+header {
+    width: 100%;
+    background-color: white;
+
+    .top-header {
+        border-bottom: 1px solid $neutral400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            display: flex;
+
+            img {
+                margin-right: 2rem;
+            }
+
+            a {
+                height: 3.25rem;
+            }
+        }
+
+        .avatar {
+            width: 2.5rem;
+            height: 2.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .bottom-header {
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        padding: .25rem 12.5% 0 12.5%;
+        height: 3.25rem;
+        vertical-align: middle;
+    }
+
+    img {
+        height: 2.75rem;
+    }
+}

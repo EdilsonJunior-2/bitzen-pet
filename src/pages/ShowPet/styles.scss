@@ -1,0 +1,81 @@
+@import "../../assets/styles/variables";
+
+.show-pet-view {
+    .page-body {
+        padding: 0 12.5%;
+
+
+        .general-actions {
+            width: auto;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            .ant-input-search {
+                height: 2.5rem;
+                width: 20rem;
+
+                .ant-input-wrapper {
+
+                    input,
+                    button {
+                        height: 2.5rem;
+                    }
+
+                    button {
+                        background-color: $primary;
+                    }
+                }
+            }
+
+            .edit-pet-button {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 16rem;
+                height: 2rem;
+
+                img {
+                    margin-right: .5rem;
+
+                }
+            }
+        }
+
+        .pet-info {
+            display: grid;
+            grid-template-columns: 21rem auto;
+            gap: 2rem;
+
+            .pet-image {
+                width: 17.5rem;
+                height: 17.5rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            h4 {
+                margin: 0 0 1rem 0;
+            }
+
+            .pet-text-info-1 {
+                width: 50%;
+                margin-top: -2rem;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 4rem;
+
+                p {
+                    margin: 0;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

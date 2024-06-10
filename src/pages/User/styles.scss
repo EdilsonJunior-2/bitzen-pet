@@ -1,0 +1,35 @@
+.user-page {
+    .page-body {
+        padding: 3rem 22.5%;
+
+        .password-box,
+        .logout {
+            margin: 1rem 0;
+
+            .box-component {
+                .children {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h4 {
+                        margin: 0;
+                    }
+
+                    button {
+                        p {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

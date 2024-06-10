@@ -1,0 +1,13 @@
+@import "../../../../assets/styles/variables";
+
+.link-component {
+    vertical-align: center;
+    font-weight: 600;
+    color: $primary;
+    text-decoration: none;
+
+    &.thin {
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}

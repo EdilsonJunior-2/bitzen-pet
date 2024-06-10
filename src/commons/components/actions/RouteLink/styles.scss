@@ -1,0 +1,17 @@
+@import "../../../../assets/styles/variables";
+
+.route-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 4rem;
+    margin-top: -.25rem;
+    color: $neutral800;
+    text-decoration: none;
+    font-weight: 500;
+
+    &.active {
+        border-bottom: 4px solid $primary;
+    }
+}

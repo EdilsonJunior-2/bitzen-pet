@@ -1,0 +1,25 @@
+@import "../../../../assets/styles/variables";
+
+.box-component {
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: .75rem;
+
+    h3 {
+        padding: 0 3rem 1rem 3rem;
+        border-bottom: 1px solid $neutral200;
+        margin: 0;
+    }
+
+    .button {
+        margin-top: 2.5rem;
+    }
+
+    .children {
+        padding: 3rem;
+    }
+
+    &.full {
+        width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+.edit-pet-view {
+    .page-body {
+        display: grid;
+        grid-template-columns: 21rem auto;
+        gap: 2rem;
+        padding: 0 12.5%;
+        margin-top: 3rem;
+
+        .pet-image {
+            width: 21rem;
+            height: 21rem;
+        }
+
+        .form-fields {
+            margin-top: -2rem;
+            width: 60%;
+        }
+
+        @media (max-width: 1280px) {
+
+            .form-fields {
+                width: 100%;
+            }
+        }
+
+        .box-component {
+            margin-bottom: 2rem;
+        }
+    }
+}

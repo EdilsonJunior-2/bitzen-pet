@@ -1,0 +1,74 @@
+@import "../../assets/styles/variables";
+
+
+.home-view {
+    .page-body {
+        padding: 0 12.5%;
+
+        .general-actions {
+            width: auto;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            .ant-input-search {
+                height: 2.5rem;
+                width: 20rem;
+
+                .ant-input-wrapper {
+
+                    input,
+                    button {
+                        height: 2.5rem;
+                    }
+
+                    button {
+                        background-color: $primary;
+                    }
+                }
+            }
+
+            .add-pet-button {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 16rem;
+                height: 2rem;
+
+                img {
+                    margin-right: .5rem;
+
+                }
+            }
+        }
+    }
+}
+
+.ant-table-wrapper {
+    border: 1px solid $neutral200;
+    border-radius: .5rem;
+}
+
+
+.table-title {
+    background-color: white !important;
+}
+
+.table-actions {
+    display: flex;
+
+    button {
+        margin: 0 .5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.action-button {
+    width: 1.5rem;
+    height: 1.5rem;
+}

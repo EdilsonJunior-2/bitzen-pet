@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/variables";
+
+.file-input-component {
+    width: 21rem;
+    height: 21rem;
+
+    input {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .error-message {
+        font-size: .75rem;
+        color: $error;
+    }
+
+    .ant-upload-list {
+        display: none;
+    }
+}

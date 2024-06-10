@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables";
+
+.checkbox-component {
+    display: flex;
+
+    input {
+        display: none;
+
+        &+label::before {
+            content: '';
+            display: inline-block;
+            width: 1rem;
+            /* Adjust size as needed */
+            height: 1rem;
+            /* Adjust size as needed */
+            border: 1px solid $neutral300;
+            /* Example color: green */
+            border-radius: 2px;
+            /* Rounded corners */
+            margin-right: .5rem;
+            /* Spacing between checkbox and label */
+        }
+
+        &:checked+label::before {
+            background-color: $primary;
+            /* Example color: green */
+        }
+    }
+
+    label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+}
