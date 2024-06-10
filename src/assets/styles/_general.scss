@@ -27,3 +27,11 @@ h6 {
 label {
     color: $neutral700;
 }
+
+.go-back {
+    display: flex;
+
+    img {
+        margin-right: .25rem;
+    }
+}

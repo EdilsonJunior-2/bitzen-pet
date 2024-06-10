@@ -42,7 +42,7 @@ export default () => {
 	return (
 		<div className="sign-up-view">
 			<Box>
-				<Link href="/">Voltar</Link>
+				<Link href="/"><p className="go-back"><img src="src/assets/back-arrow.svg" />Voltar</p></Link>
 				<h1>Cadastre-se</h1>
 				<p>
 					Já possui uma conta? <Link href="/">Entrar na plataforma</Link>

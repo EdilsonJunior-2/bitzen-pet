@@ -15,14 +15,13 @@ export default (() => {
         const paths = window.location.pathname.split("/");
         const petId = paths[paths.length - 1];
         getPet(petId).then(res => setPet(res));
-
     }, []);
 
     return <div className="show-pet-view">
         <PageHeader>Detalhes</PageHeader>
         <section className="page-body">
             <section className="general-actions">
-                <Link href="/home">Voltar</Link>
+                <Link href="/home"><p className="go-back"><img src="src/assets/back-arrow.svg" />Voltar</p></Link>
                 <Button variant={ButtonVariants.Primary} thin onClick={() => navigate(`/editar-pet/${pet.id}`)}>
                     <p className="edit-pet-button"><img src="src/assets/edit.svg" />Editar</p>
                 </Button>
